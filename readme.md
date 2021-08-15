@@ -12,6 +12,7 @@ simple one click run binaries for omegadb database api.
 - solaris
 - Mac OS
 
+this server is tested on windows and linux. windows is most prefered operating system. others may fail to provide the homepage but give search results.
 
 # how to run
 
