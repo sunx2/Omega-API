@@ -40,3 +40,29 @@ example
 
 after running the executable , open your homepage for OmegaDB API interface which 
 contains documentation and test suites as well as links for different database json.
+
+# run server in docker container
+
+example , on linux 
+
+Dockerfile 
+
+```dockerfile
+FROM alpine
+COPY server_linux_64bit.bin /bin/
+EXPOSE  8085
+CMD [ "server_linux_64bit.bin"]
+```
+
+then build the image
+
+```ps1
+docker build --tag omegadbapi-alpine:latest .
+```
+this image is less than 19mb in size
+
+and then run using
+```ps1
+docker run --expose 8050 omegadbapi-alpine:latest 
+```
+for running in localhost:8050
