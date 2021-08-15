@@ -1,4 +1,4 @@
-export GIN_MODE=release
+
 
 if $(uname -m | grep '64'); then
   echo "64 Bit Linux found"
